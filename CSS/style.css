@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* CSS VARIABLES */
+:root{
+    --header-height:3rem;
+    --nav-width:324px;
+
+/* FONT */
+    --main-font:'Poppins',sans-serif;
+}
+/* BASE */
+*,::before,::after{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    background-color:#eae7dc;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+}
+.section{
+    padding: 1rem 0 2rem;
+    min-height: 100vh;
+}
+.section-title{
+    text-align: center;
+}
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    column-gap: 2rem;
+    width: calc(100% 2rem);
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color:#e98074;
+    box-shadow: 0 2px 4px rgba(32, 32, 32, 0.349);
+}
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+}
+.nav_menu{
+    position:fixed;
+    z-index: 11;
+    top:-11rem;
+    left: 0;
+    width: 100%;
+    height: 22vh;
+    padding: 3rem;
+    background-color: #e98074;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav_close{
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav_link{
+    position: relative;
+    top: -1rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #17252a;
+    box-shadow: 0 2px 2px #d16a4a;
+    font-weight:500;
+    text-transform: uppercase;
+    transition: .3s;
+    background-color: #d8c3a5;
+    padding: 0.2rem 1.9rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.nav_link:hover{
+    background-color: #17252a;
+}
+
+.nav_link::after{
+    background-color: #17252a;
+}
+.nav_toggle{
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+.show{
+    top: 0%;
+}
+.nav_close{
+    font-size: 2rem;
+    color: black;
+}
+
+
+/* page1  */
+.icon-bars{
+    height: 1.15rem;
+    width: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.icon-bars div{
+    width: 100%;
+    border-radius: 10px;
+    background-color:#17252a;
+    height: 4px;
+}
+.icon-close{
+    height: 1.15rem;
+    width: 1.3rem;
+    position: relative;
+    top: 15px;
+    left: 7px;
+    overflow: hidden;
+}
+.icon-close div{
+    width: 100%;
+    border-radius: 10px;
+    background-color:#17252a;
+    height: 4px;
+    position: absolute;
+    top: 6px;
+}
+.icon-close div:nth-child(1){
+    transform: rotateZ(45deg);
+}
+.icon-close div:nth-child(2){
+    transform: rotateZ(-45deg);
+}
+.page1_container{
+    height: calc(100vh - 3rem);
+    align-items: center;
+    z-index: 5;
+    justify-content: center;
+    display: flex;
+}
+.page1_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+    background-color: #d8c3a5;
+    height: 25rem;
+    width: 17rem;
+    position: relative;
+    border-radius: 0.9rem;
+}
+.QR_container{
+    position: relative;
+    margin-top: -9rem;
+    margin-bottom: 3rem;
+    background-color: transparent;
+    height: 12.5rem;
+    width: 13rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.page1_input{
+    position: fixed;
+    border-radius: 2rem;
+    border: 0.1px solid white;
+    background-color: #fff;
+    height: 2rem;
+    font-size: 0.8rem;
+    width: 15rem;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    top: -1.6rem;
+    z-index: 1;
+    transition: 0.8s linear;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:4rem;
+    margin-top: 1rem;
+    width:9rem;
+}
+.button{
+    position: relative;
+    top: -1rem;
+    height: 26px;
+    border: none;
+    background-color: #e8514f;
+    box-shadow: 1px 2px 4px #e98074d2;
+    border-radius: 1rem;
+    padding: 2px 12px;
+    color: white;
+    transition: 0.3s linear;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.2s linear;
+    cursor: pointer;   
+}
+.button-toggle{
+    background-color: #d8c3a5;
+    border: 2px solid #e98074;
+}
+.footer{
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    text-align: center;
+}
+.footer img{
+    width: 2.5rem;
+    margin-bottom: 0.4rem;
+}
+#qr-image{
+    width: 99%;
+    height: 99%;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    box-shadow: 0 2px 7px #d16a4a;
+}
+
+/* Page-2 */
+.page2_container{
+    height: calc(100vh - 3rem);
+    align-items: center;
+    z-index: 5;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.page2_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    width: 97vw;
+    border-radius: 0.2rem;
+    height: 7rem;
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+    max-width: 480px;
+}
+.banner-img{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 100%;
+}
+.pdf-title{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.pdf-attached{
+    height: 55vh;
+    margin-bottom: -2rem;
+}
+.pdf-attached iframe{
+    height: 100%;
+    /* width: 100%; */
+    zoom: 100%;
+}
+.page_btn{
+    display: none;
+}
+@media screen and (min-width:500px){
+    .nav_toggle,.nav_close,.nav_logo{
+        display: none;
+    }
+    .header{
+        height: 4rem;
+    }
+    .nav_menu{
+       display: none;
+    }
+    .page_btn{
+        display: block;
+        height: 2.4rem;
+        margin-top: 1rem;
+        padding: 4px;
+        padding-left: 20px;
+        border-radius: 2.5rem;
+        font-size: 1.2rem;
+        width: 7.2rem;
+        font-weight: 600;
+        box-shadow: 0 3px 2px #e8514f;
+        background-color:#d8c3a5;
+        text-transform: uppercase;
+    }
+    .page_btn a{
+        color: #17252a;
+    }
+    .QR_container:hover{
+        box-shadow:0 4px 10px #e98074 ;
+    }
+    .page_btn:hover{
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .page1_data{
+        height: 28rem;
+        width: 20rem;
+    }
+    .page1_input{
+        width: 17rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    .button{
+        height:35px ;
+        width:13rem;
+        padding: 5px;
+    }
+    .banner{
+        max-width: 600px;
+        height: 10rem;
+    }
+    .button-container{
+        width: 13rem;
+        height: 80px;
+        justify-content: space-between;
+    }
+    .footer{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width:785px){
+    .page1_button{
+        width: initial;
+    }
+    .nav_menu{
+        display: none;
+    }
+    .nav_toggle,.nav_close,.nav_logo{
+        display: none;
+    }
+    .page1_container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .page1_input{
+        width: 20rem;
+    }
+    #submit-btn{
+        top: 0%;
+        font-size: 1.2rem;
+    }
+    .QRcode_title{
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .QRcode_img{
+        width: 12rem;
+    }
+    .button-container{
+        height: 5rem;
+        margin-top: 0.1rem;
+    }
+}
+
+@media screen and (min-width:1024px)
+{
+    .nav_menu{
+        display: none;
+    }
+    body{
+        margin: 0;
+    }
+    .nav_toggle,.nav_close,.nav_logo{
+        display: none;
+    }
+    .nav_link{
+        font-size: 1.3rem;
+    }
+    .page1_social_link{
+        font-size: 2rem;
+    }
+    .page1_container{
+        height: 100vh;
+    }
+    .page1_img{
+        width: 220px;
+        height: 220px;
+    }
+    .page1_button{
+        width: 25%;
+    }
+    .section{
+        padding: 3rem 0 2rem;
+    }
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page1_data_media_query{
+        margin-right: 16rem;
+    }
+    .page1_data{
+        height: 35rem;
+        width: 30rem;
+    }
+    .QR_container{
+        margin-bottom: 4rem;
+    }
+    .page1_input{
+        width: 25rem;
+        height: 3rem;
+        font-size: 14px;
+    }
+    .button-container{
+        height: 110px;
+        margin-bottom: -6rem;
+        margin-top: 3rem;
+    }
+    .button{
+        font-size: 1.1rem;
+
+    }
+    .banner{
+        max-width: 500px;
+        max-height: 150px;
+    }
+    .pdf-title{
+        position: relative;
+        top: -6rem;
+        font-size: 3rem;
+        max-width: 500px;
+    }
+    .page2_data{
+        display: flex;
+        flex-direction: row;
+    }
+    .banner-and-title{
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        height: 62vh;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5rem;
+    }
+    .pdf-attached{
+        position: relative;
+        top: -2rem;
+        height: 80vh;
+        width: 43vw;
+    }
+    .pdf-attached iframe{
+        width: 100%;
+    }
+    
+
+}
+@media screen and (min-width:1060px)
+{
+    .page_btn{
+        margin-left: -10%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-2</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div id="next-page1-btn" class="page_btn">
+                <a href="./index.html">Page-1</a>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <div class="icon-bars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+    
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <div class="icon-close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+    
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="./index.html" class="nav_link page1-active" id="btn">Page-1</a></li>
+                    <li class="nav_item"><a href="./page2.html" class="nav_link" id="btn1">Page-2</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+           <!-- page2  -->
+    <section class="page2 section" id="page2">
+        <div class="page2_container bd-grid">
+            <div class="page2_data">
+                <div class="banner-and-title">
+                <div class="banner">
+                    <img src="./IMAGES/banner.jpg" alt="AI" class="banner-img">
+                </div>
+                <div class="pdf-title">
+                    Towards Artificial Intelligence
+                </div>
+                </div>
+                <div class="pdf-attached">
+                    <iframe src="https://drive.google.com/file/d/1xWWWYo86KqnEd5H-pXqO4l4nTPqAxe5_/preview" type="application/pdf"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+
+<script>
+const navMenu = document.getElementById('nav-menu'),
+toggleMenu = document.getElementById('nav-toggle'),
+closeMenu = document.getElementById('nav-close')
+
+// SHOW MENU 
+toggleMenu.addEventListener('click',()=>{
+    navMenu.classList.toggle('show')
+})
+
+// HIDE MENU 
+closeMenu.addEventListener('click',()=>
+{
+    navMenu.classList.remove('show')
+})
+
+</script>
+</body>
+</html>
