@@ -1,30 +1,5 @@
-const navMenu = document.getElementById("nav-menu"),
-  toggleMenu = document.getElementById("nav-toggle"),
-  closeMenu = document.getElementById("nav-close");
-
-// SHOW MENU
-toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
-
-// HIDE MENU
-closeMenu.addEventListener("click", () => {
-  // navMenu.classList.remove("show");
-  navMenu.classList.style.height = "0";
-});
-
 const inputBox = document.getElementById("page1-input");
 const submitButton = document.getElementById("submit-btn");
-
-// REMOVE MENU
-btn = document.getElementById("btn");
-btn.addEventListener("click", () => {
-  navMenu.classList.remove("show");
-});
-btn1 = document.getElementById("btn1");
-btn1.addEventListener("click", () => {
-  navMenu.classList.remove("show");
-});
 const sections = document.getElementById("section[id]");
 
 // QR CODE GENERATOR
