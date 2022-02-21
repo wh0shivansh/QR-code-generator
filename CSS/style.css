@@ -60,29 +60,29 @@ body{
     text-align: center;
     justify-content: center;
     background-color: #d8c3a5;
-    height: 25rem;
-    width: 17rem;
+    height: 31rem;
+    width: 20rem;
     position: relative;
     border-radius: 0.9rem;
 }
 .QR_container{
     position: relative;
-    margin-top: -9rem;
-    margin-bottom: 3rem;
+    margin-top: -10rem;
+    margin-bottom: 6.5rem;
     background-color: transparent;
-    height: 12.5rem;
-    width: 13rem;
+    height: 14rem;
+    width: 14rem;
     border-radius: 0.2rem;
     cursor: pointer;
 }
 .page1_input{
     position: fixed;
     border-radius: 2rem;
-    border: 0.1px solid white;
+    border: 0.5px solid white;
     background-color: #fff;
-    height: 2rem;
-    font-size: 0.8rem;
-    width: 15rem;
+    height: 2.4rem;
+    font-size: 0.9rem;
+    width: 16.9rem;
     position: relative;
     font-family: 'Poppins',sans-serif;
     top: -1.6rem;
@@ -93,19 +93,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:4rem;
-    margin-top: 1rem;
-    width:9rem;
+    height:4.6rem;
+    margin-top: 1.2rem;
+    width:10rem;
 }
 .button{
     position: relative;
     top: -1rem;
-    height: 26px;
+    height: 29px;
     border: none;
     background-color: #e8514f;
     box-shadow: 1px 2px 4px #e98074d2;
     border-radius: 1rem;
-    padding: 2px 12px;
+    padding: 1.5px 12px;
     color: white;
     transition: 0.3s linear;
     text-transform: uppercase;
@@ -118,19 +118,16 @@ body{
     border: 2px solid #e98074;
 }
 .footer{
-    position: absolute;
-    bottom: 1rem;
+    position: fixed;
+    bottom: 0;
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-input{
+input[type=text]{
+    outline: none;
     text-align: center;
-}
-.footer img{
-    width: 2.5rem;
-    margin-bottom: 0.4rem;
 }
 #qr-image{
     width: 99%;
