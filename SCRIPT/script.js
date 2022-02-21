@@ -1,18 +1,3 @@
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close')
-
-// SHOW MENU 
-toggleMenu.addEventListener('click',()=>{
-    navMenu.classList.toggle('show')
-})
-
-// HIDE MENU 
-closeMenu.addEventListener('click',()=>
-{
-    navMenu.classList.remove('show')
-})
-
 const inputBox = document.getElementById('page1-input');
 const submitButton =  document.getElementById('submit-btn');
 
