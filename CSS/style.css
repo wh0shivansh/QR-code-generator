@@ -241,6 +241,9 @@ input[type=text]{
         font-size: 1.1rem;
 
     }
+   .footer{
+display:none;
+}
 
    
 }
