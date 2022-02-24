@@ -198,6 +198,9 @@ input[type=text]{
     .QRcode_img{
         width: 12rem;
     }
+    .footer{
+        display:none;
+    }
 }
 
 @media screen and (min-width:1024px)
@@ -242,8 +245,8 @@ input[type=text]{
 
     }
    .footer{
-display:none;
-}
+        display:none;
+    }
 
    
 }
